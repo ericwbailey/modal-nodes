@@ -1,0 +1,42 @@
+{
+  "name": "modal-nodes",
+  "description": "A modular, low-specificity CSS framework for cantina.co",
+  "homepage": "https://github.com/cantinac/modal-nodes",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Eric Bailey <eric@cantina.co> (https://cantina.co/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cantinac/modal-nodes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cantinac/modal-nodes/issues",
+    "email": "eric@cantina.co"
+  },
+  "dependencies": {
+    "family.scss": "^1.0.8",
+    "mappy-breakpoints": "^0.2.3",
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylefmt": "^1.0.0",
+    "gulp-stylelint": "^3.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "kss": "^3.0.0-beta.18",
+    "michelangelo": "^0.5.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2",
+    "sassdoc": "^2.1.20",
+    "sassdoc-theme-flippant": "^0.1.0"
+  }
+}
