@@ -20,7 +20,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # JavaScript and JSON defaults
-[*.{jsjson}]
+[*.{js,json}]
 indent_size = 2
 
 [*.{md,markdown}]
