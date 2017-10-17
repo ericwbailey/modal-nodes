@@ -1,0 +1,11 @@
+@for $i from 1 through $global-iterations {
+  u-min-height-#{$i} {
+    min-height: ms($i, rem);
+  }
+}
+
+@each $percent in $percentages {
+  u-min-height-#{$percent} {
+    min-height: $percent * 1%;
+  }
+}

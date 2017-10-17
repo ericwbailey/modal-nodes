@@ -1,0 +1,11 @@
+@for $i from 1 through $global-iterations {
+  u-height-#{$i} {
+    height: ms($i, rem);
+  }
+}
+
+@each $percent in $percentages {
+  u-height-#{$percent} {
+    height: $percent * 1%;
+  }
+}

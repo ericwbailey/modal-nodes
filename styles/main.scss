@@ -23,9 +23,11 @@ $global-iterations: 10;
 
 // Utilities are immuatable, low-specificity, single-purpose classes.
 @import
-    // Utilities
     "utilities/layout.display",
     "utilities/layout.float",
+    "utilities/layout.max-height",
+    "utilities/layout.min-height",
+    "utilities/layout.height",
     "utilities/layout.max-width",
     "utilities/layout.min-width",
     "utilities/layout.width",
