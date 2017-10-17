@@ -1,0 +1,7 @@
+$radii: (
+  primary:    rem(1),
+  secondary:  rem(3),
+  tertiary:   rem(5),
+  quaternary: rem(7),
+  circle:     $global-font-size * strip-unit($global-font-size)
+);
