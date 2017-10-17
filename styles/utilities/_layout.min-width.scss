@@ -1,11 +1,15 @@
 @for $i from 1 through $global-iterations {
-  u-min-width-#{$i} {
+  .u-min-width-#{$i} {
     min-width: ms($i, rem);
   }
 }
 
 @each $percent in $percentages {
-  u-min-width-#{$percent} {
+  .u-min-width-#{$percent} {
     min-width: $percent * 1%;
   }
+}
+
+.u-min-width-auto {
+  min-width: auto;
 }

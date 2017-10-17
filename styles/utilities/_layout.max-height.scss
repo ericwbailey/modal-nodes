@@ -1,11 +1,15 @@
 @for $i from 1 through $global-iterations {
-  u-max-height-#{$i} {
+  .u-max-height-#{$i} {
     max-height: ms($i, rem);
   }
 }
 
 @each $percent in $percentages {
-  u-max-height-#{$percent} {
+  .u-max-height-#{$percent} {
     max-height: $percent * 1%;
   }
+}
+
+.u-max-height-auto {
+  max-height: auto;
 }
