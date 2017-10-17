@@ -1,0 +1,12 @@
+$text-decoration:
+  line-through,
+  none,
+  overline,
+  underline;
+
+
+@each $value in $text-decoration {
+    .u-text-decoration-#{$value} {
+        text-decoration: $value;
+    }
+}

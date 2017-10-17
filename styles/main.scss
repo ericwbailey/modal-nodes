@@ -1,0 +1,61 @@
+@charset "UTF-8";
+// Loads and manages Sass partials. Order is important!
+
+
+
+
+$global-font-size: 20px;
+$global-line-height: 1.5;
+$global-type-ratio: 1.5;
+
+
+
+@import
+    "meta/variables.paths";
+
+
+// Utilities are immuatable, low-specificity, single-purpose classes.
+@import
+    // Utilities
+    "utilities/utilities.display",
+    "utilities/utilities.float",
+    "utilities/fonts.letter-spacing",
+    "utilities/fonts.line-height",
+    "utilities/fonts.text-align",
+    "utilities/fonts.font-weight";
+
+
+
+
+
+
+
+
+
+
+// Primary
+// Secondary
+// Tertiary
+// Quaternary
+
+// Tightest
+// Tighter
+// Tight
+// Slight
+// Loose
+// Looser
+// Loosest
+
+// Thickest
+// Thicker
+// Thick
+// Thin
+// Thinner
+// Thinnest
+
+// Shortest
+// Shorter
+// Short
+// Long
+// Longer
+// Longest

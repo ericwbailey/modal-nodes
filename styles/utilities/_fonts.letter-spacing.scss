@@ -1,0 +1,16 @@
+$letter-spacing: (
+  tightest: -0.075em,
+  tighter:  -0.05em,
+  tight:    -0.025em,
+  slight:    0.025em,
+  loose:     0.05em,
+  looser:    0.075em,
+  loosest:   0.1em
+);
+
+
+@each $distance, $value in $letter-spacing {
+    .u-letter-space-#{$distance} {
+        font-weight: $value;
+    }
+}

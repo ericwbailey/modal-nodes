@@ -1,0 +1,27 @@
+$font-weight: (
+  thin:        100,
+  ultra-light: 200,
+  extra-light: 200,
+  light:       300,
+  book:        400,
+  normal:      400,
+  regular:     400,
+  medium:      500,
+  demi-bold:   600,
+  semi-bold:   600,
+  bold:        700,
+  extra-bold:  800,
+  black:       900,
+  heavy:       900,
+  ultra:       900,
+  ultra-black: 900,
+  extra-black: 1000,
+  fat:         1000
+);
+
+
+@each $weight, $value in $font-weight {
+    .u-font-weight-#{$weight} {
+        font-weight: $value;
+    }
+}

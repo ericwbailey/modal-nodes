@@ -1,0 +1,12 @@
+$text-transform:
+  capitalize,
+  lowercase,
+  uppercase,
+  none;
+
+
+@each $value in $text-transform {
+    .u-text-transform-#{$value} {
+        text-transform: $value;
+    }
+}

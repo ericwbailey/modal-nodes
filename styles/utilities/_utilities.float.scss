@@ -1,0 +1,13 @@
+$float:
+  left,
+  right,
+  none,
+  inline-start,
+  inline-end;
+
+
+@each $value in $float {
+    .u-float-#{$value} {
+        float: $value;
+    }
+}

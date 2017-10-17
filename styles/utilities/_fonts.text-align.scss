@@ -1,0 +1,15 @@
+$text-align:
+  center,
+  end,
+  justify,
+  justify-all,
+  left,
+  right,
+  start;
+
+
+@each $value in $text-align {
+    .u-text-align-#{$value} {
+        text-align: $value;
+    }
+}

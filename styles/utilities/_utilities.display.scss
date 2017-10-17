@@ -1,0 +1,29 @@
+$display:
+  block,
+  contents,
+  flex,
+  grid,
+  inline,
+  inline-block,
+  inline-flex,
+  inline-grid,
+  inline-table,
+  list-item,
+  none,
+  subgrid,
+  table,
+  table-caption,
+  table-cell,
+  table-column,
+  table-column-group,
+  table-footer-group,
+  table-header-group,
+  table-row,
+  table-row-group;
+
+
+@each $value in $display {
+    .u-display-#{$value} {
+        display: $value;
+    }
+}
