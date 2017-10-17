@@ -1,0 +1,11 @@
+$background-origin:
+  border-box,
+  content-box,
+  padding-box;
+
+
+@each $value in $background-origin {
+    .u-background-origin-#{$value} {
+        background-origin: $value;
+    }
+}
