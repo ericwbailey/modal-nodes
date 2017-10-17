@@ -22,8 +22,8 @@ $global-type-ratio: 1.618;
 // Utilities are immuatable, low-specificity, single-purpose classes.
 @import
     // Utilities
-    "utilities/utilities.display",
-    "utilities/utilities.float",
+    "utilities/layout.display",
+    "utilities/layout.float",
 
     "utilities/background.background-size",
 
