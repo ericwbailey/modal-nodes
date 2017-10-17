@@ -2,7 +2,8 @@ $text-transform:
   capitalize,
   lowercase,
   uppercase,
-  none;
+  none
+;
 
 
 @each $value in $text-transform {

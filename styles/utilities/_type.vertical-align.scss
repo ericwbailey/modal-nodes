@@ -6,7 +6,8 @@ $vertical-align:
   super,
   text-bottom,
   text-top,
-  top;
+  top
+;
 
 
 @each $value in $vertical-align {

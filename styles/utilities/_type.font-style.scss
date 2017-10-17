@@ -1,6 +1,7 @@
 $font-style:
   italic,
-  normal;
+  normal
+;
 
 
 @each $value in $font-style {

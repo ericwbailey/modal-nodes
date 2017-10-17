@@ -1,7 +1,8 @@
 $background-size:
   auto,
   contain,
-  cover;
+  cover
+;
 
 
 @each $value in $background-size {

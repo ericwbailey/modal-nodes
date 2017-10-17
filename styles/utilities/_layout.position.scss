@@ -3,7 +3,8 @@ $position:
   fixed,
   relative,
   static,
-  sticky;
+  sticky
+;
 
 
 @each $value in $position {

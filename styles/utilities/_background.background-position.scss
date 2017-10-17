@@ -3,7 +3,8 @@ $background-position:
   center
   left,
   right,
-  top;
+  top
+;
 
 
 @each $value in $background-position {

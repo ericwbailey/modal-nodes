@@ -2,7 +2,8 @@ $text-decoration:
   line-through,
   none,
   overline,
-  underline;
+  underline
+;
 
 
 @each $value in $text-decoration {

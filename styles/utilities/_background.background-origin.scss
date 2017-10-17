@@ -1,7 +1,8 @@
 $background-origin:
   border-box,
   content-box,
-  padding-box;
+  padding-box
+;
 
 
 @each $value in $background-origin {

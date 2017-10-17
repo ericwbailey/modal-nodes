@@ -19,7 +19,8 @@ $display:
   table-footer-group,
   table-header-group,
   table-row,
-  table-row-group;
+  table-row-group
+;
 
 
 @each $value in $display {

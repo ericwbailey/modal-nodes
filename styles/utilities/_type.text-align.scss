@@ -5,7 +5,8 @@ $text-align:
   justify-all,
   left,
   right,
-  start;
+  start
+;
 
 
 @each $value in $text-align {

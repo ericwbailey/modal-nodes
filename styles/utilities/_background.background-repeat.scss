@@ -4,7 +4,8 @@ $background-repeat:
   repeat-x,
   repeat-y,
   round,
-  space;
+  space
+;
 
 
 @each $value in $background-repeat {
