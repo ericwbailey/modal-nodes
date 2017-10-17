@@ -1,0 +1,11 @@
+$background-size:
+  auto,
+  contain,
+  cover;
+
+
+@each $value in $background-size {
+    .u-background-size-#{$value} {
+        background-size: $value;
+    }
+}
