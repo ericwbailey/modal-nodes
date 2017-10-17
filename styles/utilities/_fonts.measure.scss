@@ -1,0 +1,24 @@
+$measure: (
+  short:  45ex,
+  medium: 66ex,
+  long:   75ex
+);
+
+
+@each $length, $value in $measure {
+    .u-measure-#{$length} {
+        max-width: $value;
+    }
+}
+
+@mixin u-measure-short() {
+  max-width: map-get($measure, short);
+}
+
+@mixin u-measure-medium() {
+  max-width: map-get($measure, medium);
+}
+
+@mixin u-measure-long() {
+  max-width: map-get($measure, long);
+}
