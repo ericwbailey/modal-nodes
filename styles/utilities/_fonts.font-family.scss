@@ -1,0 +1,13 @@
+$font-family: (
+  helvetica: "'Helvetica Neue', Helvetica, Arial, sans-serif",
+  lato:      "'Lato', Arial, sans-serif;",
+  system:    "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+  code:      "monaco, 'Lucida Console', 'Lucida Sans Typewriter', Consolas, 'Bitstream Vera Sans Mono', monospace"
+);
+
+
+@each $typeface, $stack in $font-family {
+    .u-font-family-#{$typeface} {
+        font-weight: $stack;
+    }
+}
