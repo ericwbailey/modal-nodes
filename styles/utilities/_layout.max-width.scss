@@ -1,0 +1,13 @@
+$max-width:
+  ms(1),
+  ms(2),
+  ms(3),
+  ms(4),
+  ms(5);
+
+
+@for $i from 1 through $global-iterations {
+  u-max-width-#{$i} {
+    max-width: ms($i);
+  }
+}

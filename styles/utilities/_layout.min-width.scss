@@ -1,0 +1,13 @@
+$min-width:
+  ms(1),
+  ms(2),
+  ms(3),
+  ms(4),
+  ms(5);
+
+
+@for $i from 1 through $global-iterations {
+  u-min-width-#{$i} {
+    min-width: ms($i);
+  }
+}
