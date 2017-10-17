@@ -19,10 +19,17 @@ $global-type-ratio: 1.5;
     // Utilities
     "utilities/utilities.display",
     "utilities/utilities.float",
+    "utilities/fonts.font-family",
+    "utilities/fonts.font-style",
+    "utilities/fonts.font-weight",
     "utilities/fonts.letter-spacing",
     "utilities/fonts.line-height",
+    "utilities/fonts.measure",
     "utilities/fonts.text-align",
-    "utilities/fonts.font-weight";
+    "utilities/fonts.text-decoration",
+    "utilities/fonts.text-transform",
+    "utilities/fonts.vertical-align"
+;
 
 
 
@@ -56,6 +63,7 @@ $global-type-ratio: 1.5;
 // Shortest
 // Shorter
 // Short
+// Medium
 // Long
 // Longer
 // Longest
