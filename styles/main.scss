@@ -14,6 +14,7 @@ $global-iterations: 10;
 @import
     "meta/variables.errors",
     "meta/variables.paths",
+    "meta/variables.percentages",
     "meta/variables.units",
 
     "meta/functions.modular-scale"
@@ -25,6 +26,8 @@ $global-iterations: 10;
     // Utilities
     "utilities/layout.display",
     "utilities/layout.float",
+    "utilities/layout.max-width",
+    "utilities/layout.min-width",
 
     "utilities/background.background-size",
 

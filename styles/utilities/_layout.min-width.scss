@@ -3,3 +3,9 @@
     min-width: ms($i, rem);
   }
 }
+
+@each $percent in $percentages {
+  u-min-width-#{$percent} {
+    min-width: $percent * 1%;
+  }
+}

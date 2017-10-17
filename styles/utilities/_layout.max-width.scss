@@ -3,3 +3,9 @@
     max-width: ms($i, rem);
   }
 }
+
+@each $percent in $percentages {
+  u-max-width-#{$percent} {
+    max-width: $percent * 1%;
+  }
+}
