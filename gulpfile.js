@@ -13,7 +13,7 @@ gulp.task('styles', function() {
   return gulp.src("./styles/main.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'compact',
+      outputStyle: 'expanded',
       errLogToConsole: true
     }))
     .pipe(autoprefix())
