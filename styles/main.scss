@@ -17,6 +17,8 @@ $global-iterations: 10;
     "meta/variables.percentages",
     "meta/variables.units",
 
+    "meta/maps.colors",
+
     "meta/functions.modular-scale"
 ;
 
@@ -34,6 +36,9 @@ $global-iterations: 10;
     "utilities/layout.width",
 
     "utilities/background.background-size",
+
+    "utilities/color.background-color",
+    "utilities/color.color",
 
     "utilities/type.font-family",
     "utilities/type.font-size",
