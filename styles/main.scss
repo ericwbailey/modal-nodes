@@ -6,12 +6,17 @@
 
 $global-font-size: 20px;
 $global-line-height: 1.5;
-$global-type-ratio: 1.5;
+$global-type-ratio: 1.618;
 
 
-
+// Meta supplies logic needed to build and maintain classes.
 @import
-    "meta/variables.paths";
+    "meta/variables.errors",
+    "meta/variables.paths",
+    "meta/variables.units",
+
+    "meta/functions.modular-scale"
+;
 
 
 // Utilities are immuatable, low-specificity, single-purpose classes.
