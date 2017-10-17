@@ -17,9 +17,13 @@ $global-iterations: 10;
     "meta/variables.percentages",
     "meta/variables.units",
 
-    "meta/maps.colors",
+    "meta/functions.ems",
+    "meta/functions.modular-scale",
+    "meta/functions.rems",
+    "meta/functions.strip-units",
 
-    "meta/functions.modular-scale"
+    "meta/maps.colors",
+    "meta/maps.radii"
 ;
 
 
@@ -39,6 +43,8 @@ $global-iterations: 10;
     "utilities/background.background-position",
     "utilities/background.background-repeat",
     "utilities/background.background-size",
+
+    "utilities/borders.border-radius",
 
     "utilities/color.background-color",
     "utilities/color.color",
