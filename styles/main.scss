@@ -14,8 +14,9 @@ $global-iterations: 10;
 @import
     "meta/variables.errors",
     "meta/variables.paths",
-    "meta/variables.percentages",
-    "meta/variables.units",
+
+    "meta/lists.percentages",
+    "meta/lists.units",
 
     "meta/functions.ems",
     "meta/functions.modular-scale",
