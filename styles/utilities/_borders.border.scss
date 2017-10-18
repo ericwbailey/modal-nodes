@@ -1,0 +1,38 @@
+$border-widths: (
+  thickest: rem(9),
+  thicker:  rem(7),
+  thick:    rem(5),
+  thin:     rem(3),
+  thinner:  rem(2),
+  thinnest: 1px
+);
+
+$border-types:
+  dashed,
+  dotted,
+  double,
+  solid
+;
+
+$border-directions:
+  top,
+  left,
+  bottom,
+  right
+;
+
+
+@each $width, $value in $border-widths {
+    @each $type in $border-types {
+        @each $direction in $border-directions {
+
+            .u-border-#{$width} {
+                border: $value $type currentColor;
+            }
+
+            .u-border-#{$width}-#{$direction} {
+                border-#{$direction}: $value $type currentColor;
+            }
+        }
+    }
+}
