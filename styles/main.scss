@@ -1,9 +1,8 @@
 @charset "UTF-8";
 // Loads and manages Sass partials. Order is important!
 
-
-
-
+// Global configuration. These properties affect how utility classes are
+// generated. Don't edit them unless you know what you're doing.
 $global-font-size: 20px;
 $global-line-height: 1.5;
 $global-type-ratio: 1.618;
@@ -36,8 +35,10 @@ $global-iterations: 10;
     "utilities/layout.max-height",
     "utilities/layout.min-height",
     "utilities/layout.height",
+    "utilities/layout.margin",
     "utilities/layout.max-width",
     "utilities/layout.min-width",
+    "utilities/layout.padding",
     "utilities/layout.position",
     "utilities/layout.width",
 
