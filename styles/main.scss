@@ -70,6 +70,13 @@ $global-type-ratio: 1.618;
 ;
 
 
+// Utilities are immuatable, low-specificity, single-purpose classes.
+@import
+    "helpers/clearfix",
+    "helpers/hide-visually",
+    "reset-all-styles",
+    "text-break"
+;
 
 
 

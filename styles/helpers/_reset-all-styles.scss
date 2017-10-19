@@ -1,0 +1,8 @@
+@mixin h-reset-all-styles() {
+    all: initial;
+}
+
+
+.h-reset-all-styles {
+    @include h-reset-all-styles();
+}

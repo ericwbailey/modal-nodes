@@ -1,0 +1,27 @@
+@mixin h-text-break($word-or-link) {
+    @if ($word-or-link == "word") {
+        hyphens: auto;
+    }
+
+    @else if ($word-or-link == "link") {
+        hyphens: none;
+    }
+
+    @else {
+        @error "`#{$word-or-link}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-either
+        + "`word` or `link`";
+    }
+}
+
+
+.h-text-break {
+    &-word {
+        @include h-text-break(word);
+    }
+
+    &-link {
+        @include h-text-break(link);
+    }
+}

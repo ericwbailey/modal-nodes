@@ -1,0 +1,12 @@
+@mixin h-clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+
+.h-clearfix {
+    @include h-clearfix();
+}
