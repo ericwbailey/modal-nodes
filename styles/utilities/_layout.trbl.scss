@@ -1,0 +1,7 @@
+@for $i from 1 through $global-iterations {
+  @each $direction in $directions {
+    .#{$direction}-#{$i} {
+      #{$direction}: ms($i, rem);
+    }
+  }
+}
