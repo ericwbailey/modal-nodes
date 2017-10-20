@@ -1,0 +1,13 @@
+$flex-directions:
+  column,
+  column-reverse,
+  row,
+  row-reverse
+;
+
+
+@each $value in $flex-directions {
+    .u-flex-direction-#{$value} {
+        flex-direction: $value;
+    }
+}

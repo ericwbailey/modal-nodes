@@ -1,0 +1,14 @@
+$align-items:
+  baseline,
+  center,
+  flex-end,
+  flex-start,
+  stretch
+;
+
+
+@each $value in $align-items {
+    .u-align-items-#{$value} {
+        align-items: $value;
+    }
+}

@@ -1,0 +1,15 @@
+$justify-content:
+  center,
+  flex-end,
+  flex-start,
+  space-between,
+  space-around,
+  space-evenly
+;
+
+
+@each $value in $justify-content {
+    .u-justify-content-#{$value} {
+        justify-content: $value;
+    }
+}

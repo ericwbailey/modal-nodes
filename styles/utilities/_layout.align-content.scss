@@ -1,0 +1,15 @@
+$align-content:
+  center,
+  flex-end,
+  flex-start,
+  space-between,
+  space-around,
+  stretch
+;
+
+
+@each $value in $align-content {
+    .u-align-content-#{$value} {
+        align-content: $value;
+    }
+}
