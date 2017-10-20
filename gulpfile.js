@@ -10,7 +10,7 @@ var gulp        = require('gulp'),
 
 // Tasks
 gulp.task('styles', function() {
-  return gulp.src("./styles/main.scss")
+  return gulp.src("./source/main.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded',
@@ -18,7 +18,7 @@ gulp.task('styles', function() {
     }))
     .pipe(autoprefix())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("./"))
+    .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream({ match: '**/*.css' }));
 });
 
