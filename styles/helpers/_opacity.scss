@@ -1,0 +1,5 @@
+@each $percent in $percentages {
+  .u-opacity-#{$percent} {
+    opacity: $percent * 1%;
+  }
+}

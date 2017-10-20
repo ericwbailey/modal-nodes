@@ -1,0 +1,12 @@
+@mixin h-text-truncate() {
+    display: inline-block;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.h-text-truncate {
+    @include h-text-truncate();
+}

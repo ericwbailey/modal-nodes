@@ -1,0 +1,20 @@
+$cursors:
+  default,
+  grab,
+  grabbing,
+  help,
+  move,
+  not-allowed,
+  pointer,
+  text,
+  wait,
+  zoom-in,
+  zoom-out
+;
+
+
+@each $style in $cursors {
+    .u-cursor-#{$style} {
+        cursor: $style;
+    }
+}

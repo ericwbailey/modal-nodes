@@ -62,6 +62,7 @@ $global-type-ratio: 1.618;
     "utilities/type.font-weight",
     "utilities/type.letter-spacing",
     "utilities/type.line-height",
+    "utilities/type.list-style-type",
     "utilities/type.measure",
     "utilities/type.text-align",
     "utilities/type.text-decoration",
@@ -73,9 +74,12 @@ $global-type-ratio: 1.618;
 // Utilities are immuatable, low-specificity, single-purpose classes.
 @import
     "helpers/clearfix",
+    "helpers/cursors",
     "helpers/hide-visually",
+    "helpers/opacity",
     "helpers/reset-all-styles",
-    "helpers/text-break"
+    "helpers/text-break",
+    "helpers/text-truncate"
 ;
 
 

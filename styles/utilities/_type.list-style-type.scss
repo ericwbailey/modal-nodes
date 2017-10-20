@@ -1,0 +1,19 @@
+$list-style-types:
+  disc,
+  circle,
+  square,
+  decimal,
+  decimal-leading-zero,
+  lower-alpha,
+  lower-roman,
+  none,
+  upper-alpha,
+  upper-roman
+;
+
+
+@each $style in $list-style-types {
+    .u-list-style-type-#{$style} {
+        list-style-type: $style;
+    }
+}
