@@ -1,5 +1,5 @@
 @for $i from 1 through $global-iterations {
-  .u-font-size-#{$i} {
+  .u-font-size-ms-#{$i} {
     font-size: ms($i, rem);
   }
 }

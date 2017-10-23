@@ -1,12 +1,12 @@
 @for $i from 1 through $global-iterations {
-  .u-padding-#{$i} {
+  .u-padding-ms-#{$i} {
     padding: ms($i, rem);
   }
 }
 
 @for $i from 1 through $global-iterations {
   @each $direction in $directions {
-    .padding-#{$direction}-#{$i} {
+    .padding-#{$direction}-ms-#{$i} {
       padding: ms($i, rem);
     }
   }

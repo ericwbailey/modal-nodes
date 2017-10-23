@@ -1,12 +1,12 @@
 @for $i from 1 through $global-iterations {
-  .u-margin-#{$i} {
+  .u-margin-ms-#{$i} {
     margin: ms($i, rem);
   }
 }
 
 @for $i from 1 through $global-iterations {
   @each $direction in $directions {
-    .margin-#{$direction}-#{$i} {
+    .margin-#{$direction}-ms-#{$i} {
       margin: ms($i, rem);
     }
   }
