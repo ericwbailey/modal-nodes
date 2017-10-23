@@ -3,7 +3,7 @@
     @each $breakpoint in $breakpoints-primary {
         @include mappy-bp($breakpoint) {
             .u-#{$property}--#{$breakpoint} {
-                background-origin: $value;
+                $property: $value;
             }
         }
     }
