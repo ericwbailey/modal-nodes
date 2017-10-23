@@ -9,4 +9,11 @@
 
 .h-clearfix {
     @include h-clearfix();
+
+    // Breakpoints
+    @each $breakpoint in $breakpoints-primary {
+        @include mappy-bp($breakpoint) {
+            @include h-clearfix();
+        }
+    }
 }

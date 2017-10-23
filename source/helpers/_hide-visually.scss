@@ -13,4 +13,11 @@
 
 .h-hide-visually {
     @include h-hide-visually();
+
+    // Breakpoints
+    @each $breakpoint in $breakpoints-primary {
+        @include mappy-bp($breakpoint) {
+            @include h-hide-visually();
+        }
+    }
 }

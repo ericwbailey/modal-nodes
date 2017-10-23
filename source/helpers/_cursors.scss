@@ -17,4 +17,6 @@ $cursors:
     .u-cursor-#{$style} {
         cursor: $style;
     }
+
+    @include generate-breakpoints(cursor, $style);
 }
