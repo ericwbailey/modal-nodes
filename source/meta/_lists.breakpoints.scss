@@ -15,3 +15,14 @@ $breakpoints: (
   'wall-medium':  4558px,
   'wall-large':   5698px
 );
+
+// This list controls which breakpoints from the map above get generated.
+// SEE: `_mixins.generate-breakpoints.scss`
+$breakpoints-primary:
+  wrist-large,
+  palm-large,
+  lap-large,
+  lap-large,
+  desk-large,
+  wall-large
+;
