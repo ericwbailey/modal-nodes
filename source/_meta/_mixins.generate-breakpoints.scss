@@ -2,7 +2,7 @@
 @mixin generate-breakpoints($property, $value) {
     @each $breakpoint in $breakpoints-primary {
         @include mappy-bp($breakpoint) {
-            .u-#{$property}--#{$breakpoint} {
+            .u-#{$property}-#{$value}--#{$breakpoint} {
                 #{$property}: $value;
             }
         }
