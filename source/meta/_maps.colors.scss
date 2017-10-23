@@ -1,16 +1,14 @@
-// Color names taken from Name that Color, then tweaked for brevity.
-// http://chir.ag/projects/name-that-color/
 $colors: (
   current-color: currentColor,
-  black:         #000000,
-  carrot:        #f09819,
-  cornflower:    #667eea,
-  matisse:       #1a6195,
-  persimmon:     #ff5858,
-  picton:        #2999ec,
-  royalty:       #764ba2,
-  saffron:       #ffa300,
-  tundora:       #4a4a4a,
-  white:         #ffffff,
-  wild-sand:     #f6f6f6
+  black:        #000000,
+  blue-dark:    #1a6195,
+  blue-light:   #2999ec,
+  gray-dark:    #4a4a4a,
+  gray-light:   #f6f6f6,
+  orange-dark:  #ffa300,
+  orange-light: #f09819,
+  purple-dark:  #764ba2,
+  purple-light: #667eea,
+  red-light:    #ff5858,
+  white:        #ffffff
 );
