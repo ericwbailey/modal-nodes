@@ -11,23 +11,23 @@ $global-type-ratio: 1.618;
 
 // Meta supplies logic needed to build and maintain classes.
 @import
-  "meta/variables.errors",
-  "meta/variables.paths",
+  "_meta/variables.errors",
+  "_meta/variables.paths",
 
-  "meta/lists.breakpoints",
-  "meta/lists.directions",
-  "meta/lists.percentages",
-  "meta/lists.units",
+  "_meta/lists.breakpoints",
+  "_meta/lists.directions",
+  "_meta/lists.percentages",
+  "_meta/lists.units",
 
-  "meta/mixins.generate-breakpoints",
+  "_meta/mixins.generate-breakpoints",
 
-  "meta/functions.ems",
-  "meta/functions.modular-scale",
-  "meta/functions.rems",
-  "meta/functions.strip-units",
+  "_meta/functions.ems",
+  "_meta/functions.modular-scale",
+  "_meta/functions.rems",
+  "_meta/functions.strip-units",
 
-  "meta/maps.colors",
-  "meta/maps.radii"
+  "_meta/maps.colors",
+  "_meta/maps.radii"
 ;
 
 
