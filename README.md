@@ -13,13 +13,6 @@ modal-nodes is a small, simple functional CSS library for use with Cantina proje
 If you are not familiar with the advantages/disadvantages of the functional CSS methodology, [here is a good overview of the subject](https://marcelosomers.com/writing/rationalizing-functional-css/).
 
 
-## TODO
-
-- [ ] Responsive modifiers
-- [ ] Living styleguide
-- [ ] Full Cantina palette
-
-
 ## Frequently Asked Questions
 
 ### Why should I use this?
@@ -80,6 +73,13 @@ For example:
 In this card example, the tricky custom CSS that needs an author's opinion is added in the namespaced `c-` component classes. 
 
 This delineation helps keeps further stylesheet maintenance efforts more straightforward. Be sure to also leverage Sass logic when the opportunity presents itself.
+
+
+## TODO
+
+- [ ] Responsive modifiers
+- [ ] Living styleguide
+- [ ] Full Cantina palette
 
 
 ### What's up with the name?
