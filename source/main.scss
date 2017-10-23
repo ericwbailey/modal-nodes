@@ -1,6 +1,7 @@
 @charset "UTF-8";
 // Loads and manages Sass partials. Order is important!
 
+
 // Global configuration. These properties affect how utility classes are
 // generated. Don't edit them unless you know what you're doing.
 $global-font-size: 20px;
@@ -10,91 +11,98 @@ $global-type-ratio: 1.618;
 
 // Meta supplies logic needed to build and maintain classes.
 @import
-    "meta/variables.errors",
-    "meta/variables.paths",
+  "meta/variables.errors",
+  "meta/variables.paths",
 
-    "meta/lists.directions",
-    "meta/lists.percentages",
-    "meta/lists.units",
+  "meta/lists.breakpoints",
+  "meta/lists.directions",
+  "meta/lists.percentages",
+  "meta/lists.units",
 
-    "meta/functions.ems",
-    "meta/functions.modular-scale",
-    "meta/functions.rems",
-    "meta/functions.strip-units",
+  "meta/mixins.generate-breakpoints",
 
-    "meta/maps.colors",
-    "meta/maps.radii"
+  "meta/functions.ems",
+  "meta/functions.modular-scale",
+  "meta/functions.rems",
+  "meta/functions.strip-units",
+
+  "meta/maps.colors",
+  "meta/maps.radii"
+;
+
+
+// Vendor libraries.
+@import
+  // http://lukyvj.github.io/family.scss/
+  "../node_modules/family.scss/source/src/family",
+  // https://github.com/zellwk/mappy-breakpoints
+  "../node_modules/mappy-breakpoints/mappy-breakpoints"
 ;
 
 
 // Utilities are immuatable, low-specificity, single-purpose classes.
 @import
-    "utilities/background.background-origin",
-    "utilities/background.background-position",
-    "utilities/background.background-repeat",
-    "utilities/background.background-size",
+  "utilities/background.background-origin",
+  "utilities/background.background-position",
+  "utilities/background.background-repeat",
+  "utilities/background.background-size",
 
-    "utilities/borders.border-radius",
-    "utilities/borders.border-style",
-    "utilities/borders.border",
+  "utilities/borders.border-radius",
+  "utilities/borders.border-style",
+  "utilities/borders.border",
 
-    "utilities/color.background-color",
-    "utilities/color.border-color",
-    "utilities/color.color",
+  "utilities/color.background-color",
+  "utilities/color.border-color",
+  "utilities/color.color",
 
-    "utilities/layout.align-content",
-    "utilities/layout.align-items",
-    "utilities/layout.align-self",
-    "utilities/layout.display",
-    "utilities/layout.flex-direction",
-    "utilities/layout.flex-grow",
-    "utilities/layout.flex-shrink",
-    "utilities/layout.flex-wrap",
-    "utilities/layout.float",
-    "utilities/layout.height",
-    "utilities/layout.justify-content",
-    "utilities/layout.margin",
-    "utilities/layout.max-height",
-    "utilities/layout.max-width",
-    "utilities/layout.min-height",
-    "utilities/layout.min-width",
-    "utilities/layout.order",
-    "utilities/layout.padding",
-    "utilities/layout.position",
-    "utilities/layout.trbl",
-    "utilities/layout.width",
+  "utilities/layout.align-content",
+  "utilities/layout.align-items",
+  "utilities/layout.align-self",
+  "utilities/layout.display",
+  "utilities/layout.flex-direction",
+  "utilities/layout.flex-grow",
+  "utilities/layout.flex-shrink",
+  "utilities/layout.flex-wrap",
+  "utilities/layout.float",
+  "utilities/layout.height",
+  "utilities/layout.justify-content",
+  "utilities/layout.margin",
+  "utilities/layout.max-height",
+  "utilities/layout.max-width",
+  "utilities/layout.min-height",
+  "utilities/layout.min-width",
+  "utilities/layout.order",
+  "utilities/layout.padding",
+  "utilities/layout.position",
+  "utilities/layout.trbl",
+  "utilities/layout.width",
 
-    "utilities/type.font-family",
-    "utilities/type.font-size",
-    "utilities/type.font-style",
-    "utilities/type.font-weight",
-    "utilities/type.letter-spacing",
-    "utilities/type.line-height",
-    "utilities/type.list-style-type",
-    "utilities/type.measure",
-    "utilities/type.text-align",
-    "utilities/type.text-decoration",
-    "utilities/type.text-transform",
-    "utilities/type.vertical-align"
+  "utilities/type.font-family",
+  "utilities/type.font-size",
+  "utilities/type.font-style",
+  "utilities/type.font-weight",
+  "utilities/type.letter-spacing",
+  "utilities/type.line-height",
+  "utilities/type.list-style-type",
+  "utilities/type.measure",
+  "utilities/type.text-align",
+  "utilities/type.text-decoration",
+  "utilities/type.text-transform",
+  "utilities/type.vertical-align"
 ;
 
 
 // Utilities are immuatable, low-specificity, single-purpose classes.
 @import
-    "helpers/clearfix",
-    "helpers/cursors",
-    "helpers/disable-opentype",
-    "helpers/hide-visually",
-    "helpers/opacity",
-    "helpers/reset-all-styles",
-    "helpers/text-break",
-    "helpers/text-truncate"
+  "helpers/clearfix",
+  "helpers/cursors",
+  "helpers/disable-opentype",
+  "helpers/hide-visually",
+  "helpers/opacity",
+  "helpers/reset-all-styles",
+  "helpers/text-break",
+  "helpers/text-truncate"
 ;
-
-
-
-
-
 
 
 

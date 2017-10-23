@@ -1,0 +1,9 @@
+@mixin breakpoint-factory($property, $value) {
+    @each $breakpoint in $breakpoints-primary {
+        @include mappy-bp($breakpoint) {
+            .u-#{$property}--#{$breakpoint} {
+                background-origin: $value;
+            }
+        }
+    }
+}
