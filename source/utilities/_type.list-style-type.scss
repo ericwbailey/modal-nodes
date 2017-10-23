@@ -16,4 +16,6 @@ $list-style-types:
     .u-list-style-type-#{$style} {
         list-style-type: $style;
     }
+
+    @include generate-breakpoints(list-style-types, $style);
 }

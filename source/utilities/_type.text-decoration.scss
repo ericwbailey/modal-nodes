@@ -10,4 +10,6 @@ $text-decoration:
     .u-text-decoration-#{$value} {
         text-decoration: $value;
     }
+
+    @include generate-breakpoints(text-decoration, $value);
 }

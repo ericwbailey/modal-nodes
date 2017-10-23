@@ -14,4 +14,6 @@ $vertical-align:
     .u-vertical-align-#{$value} {
         vertical-align: $value;
     }
+
+    @include generate-breakpoints(vertical-align, $value);
 }

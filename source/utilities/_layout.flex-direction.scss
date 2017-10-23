@@ -10,4 +10,6 @@ $flex-directions:
     .u-flex-direction-#{$value} {
         flex-direction: $value;
     }
+
+    @include generate-breakpoints(flex-directions, $value);
 }

@@ -1,15 +1,15 @@
 @for $i from 1 through $global-iterations {
-  .u-height-ms-#{$i} {
-    height: ms($i, rem);
-  }
+    .u-height-ms-#{$i} {
+        height: ms($i, rem);
+    }
 }
 
 @each $percent in $percentages {
-  .u-height-percent-#{$percent} {
-    height: $percent * 1%;
-  }
+    .u-height-percent-#{$percent} {
+        height: $percent * 1%;
+    }
 }
 
 .u-height-auto {
-  height: auto;
+    height: auto;
 }

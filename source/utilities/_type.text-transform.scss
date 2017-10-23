@@ -10,4 +10,6 @@ $text-transform:
     .u-text-transform-#{$value} {
         text-transform: $value;
     }
+
+    @include generate-breakpoints(text-transform, $value);
 }

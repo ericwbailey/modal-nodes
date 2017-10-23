@@ -1,15 +1,15 @@
 @for $i from 1 through $global-iterations {
-  .u-max-width-ms-#{$i} {
-    max-width: ms($i, rem);
-  }
+    .u-max-width-ms-#{$i} {
+        max-width: ms($i, rem);
+    }
 }
 
 @each $percent in $percentages {
-  .u-max-width-percent-#{$percent} {
-    max-width: $percent * 1%;
-  }
+    .u-max-width-percent-#{$percent} {
+        max-width: $percent * 1%;
+    }
 }
 
 .u-max-width-auto {
-  max-width: auto;
+    max-width: auto;
 }

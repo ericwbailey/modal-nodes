@@ -12,4 +12,6 @@ $align-content:
     .u-align-content-#{$value} {
         align-content: $value;
     }
+
+    @include generate-breakpoints(align-content, $value);
 }

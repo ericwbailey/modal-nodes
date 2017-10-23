@@ -1,23 +1,23 @@
 @for $i from 1 through $global-iterations {
-  .u-margin-ms-#{$i} {
-    margin: ms($i, rem);
-  }
+    .u-margin-ms-#{$i} {
+        margin: ms($i, rem);
+    }
 }
 
 @for $i from 1 through $global-iterations {
-  @each $direction in $directions {
-    .margin-#{$direction}-ms-#{$i} {
-      margin: ms($i, rem);
+    @each $direction in $directions {
+        .margin-#{$direction}-ms-#{$i} {
+            margin: ms($i, rem);
+        }
     }
-  }
 }
 
 @each $direction in $directions {
-  .margin-#{$direction}-none {
-    margin-#{$direction}: 0;
-  }
+    .margin-#{$direction}-none {
+        margin-#{$direction}: 0;
+    }
 }
 
 .margin-none {
-  margin: 0;
+    margin: 0;
 }

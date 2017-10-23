@@ -10,4 +10,6 @@ $border-styles:
     .u-border-style-#{$style} {
         border-style: $style;
     }
+
+    @include generate-breakpoints(border-style, $style);
 }

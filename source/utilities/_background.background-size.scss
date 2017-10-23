@@ -9,4 +9,6 @@ $background-size:
     .u-background-size-#{$value} {
         background-size: $value;
     }
+
+    @include generate-breakpoints(background-size, $value);
 }

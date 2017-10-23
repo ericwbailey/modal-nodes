@@ -8,4 +8,6 @@ $font-style:
     .u-font-style-#{$value} {
         font-style: $value;
     }
+
+    @include generate-breakpoints($font-style, $value);
 }

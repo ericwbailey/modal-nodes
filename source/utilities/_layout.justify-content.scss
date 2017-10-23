@@ -12,4 +12,6 @@ $justify-content:
     .u-justify-content-#{$value} {
         justify-content: $value;
     }
+
+    @include generate-breakpoints(justify-content, $value);
 }

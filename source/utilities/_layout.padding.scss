@@ -1,23 +1,23 @@
 @for $i from 1 through $global-iterations {
-  .u-padding-ms-#{$i} {
-    padding: ms($i, rem);
-  }
+    .u-padding-ms-#{$i} {
+        padding: ms($i, rem);
+    }
 }
 
 @for $i from 1 through $global-iterations {
-  @each $direction in $directions {
-    .padding-#{$direction}-ms-#{$i} {
-      padding: ms($i, rem);
+    @each $direction in $directions {
+        .padding-#{$direction}-ms-#{$i} {
+            padding: ms($i, rem);
+        }
     }
-  }
 }
 
 @each $direction in $directions {
-  .padding-#{$direction}-none {
-    padding-#{$direction}: 0;
-  }
+    .padding-#{$direction}-none {
+        padding-#{$direction}: 0;
+    }
 }
 
 .padding-none {
-  padding: 0;
+    padding: 0;
 }

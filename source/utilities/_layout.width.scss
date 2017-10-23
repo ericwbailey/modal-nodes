@@ -1,15 +1,15 @@
 @for $i from 1 through $global-iterations {
-  .u-width-ms-#{$i} {
-    width: ms($i, rem);
-  }
+    .u-width-ms-#{$i} {
+        width: ms($i, rem);
+    }
 }
 
 @each $percent in $percentages {
-  .u-width-percent-#{$percent} {
-    width: $percent * 1%;
-  }
+    .u-width-percent-#{$percent} {
+        width: $percent * 1%;
+    }
 }
 
 .u-width-auto {
-  width: auto;
+    width: auto;
 }

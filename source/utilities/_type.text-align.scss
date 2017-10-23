@@ -13,4 +13,6 @@ $text-align:
     .u-text-align-#{$value} {
         text-align: $value;
     }
+
+    @include generate-breakpoints(text-align, $value);
 }

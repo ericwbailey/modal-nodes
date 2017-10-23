@@ -11,4 +11,6 @@ $align-items:
     .u-align-items-#{$value} {
         align-items: $value;
     }
+
+    @include generate-breakpoints(align-items, $value);
 }

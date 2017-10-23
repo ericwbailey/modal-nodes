@@ -11,4 +11,6 @@ $float:
     .u-float-#{$value} {
         float: $value;
     }
+
+    @include generate-breakpoints(float, $value);
 }

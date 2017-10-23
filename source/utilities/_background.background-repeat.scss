@@ -12,4 +12,6 @@ $background-repeat:
     .u-background-repeat-#{$value} {
         background-repeat: $value;
     }
+
+    @include generate-breakpoints(background-repeat, $value);
 }

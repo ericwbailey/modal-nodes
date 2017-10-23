@@ -9,4 +9,6 @@ $background-origin:
     .u-background-origin-#{$value} {
         background-origin: $value;
     }
+
+    @include generate-breakpoints(background-origin, $value);
 }

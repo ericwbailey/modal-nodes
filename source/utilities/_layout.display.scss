@@ -27,4 +27,6 @@ $display:
     .u-display-#{$value} {
         display: $value;
     }
+
+    @include generate-breakpoints(display, $value);
 }
