@@ -1,5 +1,5 @@
 @for $i from 1 through $global-iterations {
-  .u-max-width-rem-#{$i} {
+  .u-max-width-ms-#{$i} {
     max-width: ms($i, rem);
   }
 }

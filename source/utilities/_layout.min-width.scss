@@ -1,5 +1,5 @@
 @for $i from 1 through $global-iterations {
-  .u-min-width-rem-#{$i} {
+  .u-min-width-ms-#{$i} {
     min-width: ms($i, rem);
   }
 }

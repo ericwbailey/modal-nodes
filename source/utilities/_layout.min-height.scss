@@ -1,5 +1,5 @@
 @for $i from 1 through $global-iterations {
-  .u-min-height-rem-#{$i} {
+  .u-min-height-ms-#{$i} {
     min-height: ms($i, rem);
   }
 }
