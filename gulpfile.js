@@ -2,10 +2,10 @@
 var gulp        = require('gulp'),
     autoprefix  = require('gulp-autoprefixer'),
     browsersync = require('browser-sync'),
+    cssnano     = require('gulp-cssnano'),
     runSequence = require('run-sequence');
     sass        = require('gulp-sass'),
-    sourcemaps  = require('gulp-sourcemaps'),
-    stylefmt    = require('gulp-stylefmt');
+    sourcemaps  = require('gulp-sourcemaps');
 
 
 // Tasks
@@ -13,10 +13,11 @@ gulp.task('styles', function() {
   return gulp.src("./source/main.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'expanded',
+      outputStyle: 'compressed',
       errLogToConsole: true
     }))
     .pipe(autoprefix())
+    .pipe(cssnano())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream({ match: '**/*.css' }));
