@@ -2,13 +2,17 @@
     .u-margin-ms-#{$i} {
         margin: ms($i, rem);
     }
+
+    @include generate-breakpoints(margin, margin-#{$i}, #{ms($i, rem)});
 }
 
 @for $i from 1 through $global-iterations {
     @each $direction in $directions {
         .margin-#{$direction}-ms-#{$i} {
-            margin: ms($i, rem);
+            margin-#{$direction}: ms($i, rem);
         }
+
+        @include generate-breakpoints(margin-#{$direction}, ms-#{$i}, ms($i, rem));
     }
 }
 
@@ -16,6 +20,8 @@
     .margin-#{$direction}-none {
         margin-#{$direction}: 0;
     }
+
+    @include generate-breakpoints(margin-#{$direction}, none, 0);
 }
 
 .margin-none {

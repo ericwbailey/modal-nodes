@@ -9,9 +9,11 @@ $border-widths: (
 
 
 @each $width, $value in $border-widths {
-  @each $direction in $directions {
-    .u-border-#{$direction}-#{$width} {
-      border-#{$direction}: $value solid currentColor;
+    @each $direction in $directions {
+        .u-border-#{$direction}-#{$width} {
+            border-#{$direction}: $value solid currentColor;
+        }
+
+        @include generate-breakpoints(border-#{$direction}, $width, $value, "solid currentColor");
     }
-  }
 }

@@ -2,12 +2,16 @@
     .u-width-ms-#{$i} {
         width: ms($i, rem);
     }
+
+    @include generate-breakpoints(width, ms-#{$i}, #{ms($i, rem)});
 }
 
 @each $percent in $percentages {
     .u-width-percent-#{$percent} {
         width: $percent * 1%;
     }
+
+    @include generate-breakpoints(width, percent-#{$percent}, #{$percent * 1%});
 }
 
 .u-width-auto {

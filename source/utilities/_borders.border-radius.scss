@@ -2,4 +2,6 @@
     .u-border-radius-#{$name} {
         border-radius: $value;
     }
+
+    @include generate-breakpoints(border-radius, $name, $value);
 }

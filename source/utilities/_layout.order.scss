@@ -2,4 +2,6 @@
     .u-order-#{$i} {
         order: $i;
     }
+
+    @include generate-breakpoints(order, $i);
 }

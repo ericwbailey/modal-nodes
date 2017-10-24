@@ -1,5 +1,7 @@
 @for $i from 1 through 12 {
-  .u-flex-grow-#{$i} {
-    flex-grow: $i;
-  }
+    .u-flex-grow-#{$i} {
+        flex-grow: $i;
+    }
+
+    @include generate-breakpoints(flex-grow, $i);
 }

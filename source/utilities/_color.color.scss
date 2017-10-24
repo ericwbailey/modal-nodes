@@ -2,4 +2,6 @@
     .u-color-#{$name} {
         color: $value;
     }
+
+    @include generate-breakpoints(color, $name, $value);
 }

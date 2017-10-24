@@ -2,12 +2,16 @@
     .u-min-width-ms-#{$i} {
         min-width: ms($i, rem);
     }
+
+    @include generate-breakpoints(min-width, ms-#{$i}, #{ms($i, rem)});
 }
 
 @each $percent in $percentages {
     .u-min-width-percent-#{$percent} {
         min-width: $percent * 1%;
     }
+
+    @include generate-breakpoints(min-width, percent-#{$percent}, $percent * 1%);
 }
 
 .u-min-width-auto {

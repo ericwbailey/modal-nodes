@@ -2,12 +2,16 @@
     .u-max-height-ms-#{$i} {
         max-height: ms($i, rem);
     }
+
+    @include generate-breakpoints(max-height, ms-#{$i}, #{ms($i, rem)});
 }
 
 @each $percent in $percentages {
     .u-max-height-percent-#{$percent} {
         max-height: $percent * 1%;
     }
+
+    @include generate-breakpoints(max-height, percent-#{$percent}, $percent * 1%);
 }
 
 .u-max-height-auto {

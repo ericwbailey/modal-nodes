@@ -2,12 +2,16 @@
     .u-height-ms-#{$i} {
         height: ms($i, rem);
     }
+
+    @include generate-breakpoints(height, ms-#{$i}, #{ms($i, rem)});
 }
 
 @each $percent in $percentages {
     .u-height-percent-#{$percent} {
         height: $percent * 1%;
     }
+
+    @include generate-breakpoints(height, percent-#{$percent}, #{$percent * 1%});
 }
 
 .u-height-auto {

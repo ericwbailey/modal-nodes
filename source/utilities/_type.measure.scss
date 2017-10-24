@@ -9,6 +9,8 @@ $measure: (
     .u-measure-#{$length} {
         max-width: $value;
     }
+
+    @include generate-breakpoints(max-width, $length, $value);
 }
 
 @mixin u-measure-short() {

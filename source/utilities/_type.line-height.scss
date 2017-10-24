@@ -13,4 +13,6 @@ $line-height: (
     .u-line-height-#{$distance} {
         line-height: $value;
     }
+
+    @include generate-breakpoints(line-height, $distance, $value);
 }

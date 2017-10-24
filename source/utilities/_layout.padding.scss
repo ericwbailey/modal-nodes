@@ -2,6 +2,8 @@
     .u-padding-ms-#{$i} {
         padding: ms($i, rem);
     }
+
+    @include generate-breakpoints(padding, padding-#{$i}, #{ms($i, rem)});
 }
 
 @for $i from 1 through $global-iterations {
@@ -9,6 +11,8 @@
         .padding-#{$direction}-ms-#{$i} {
             padding: ms($i, rem);
         }
+
+        @include generate-breakpoints(padding-#{$direction}, ms-#{$i}, ms($i, rem));
     }
 }
 
@@ -16,6 +20,8 @@
     .padding-#{$direction}-none {
         padding-#{$direction}: 0;
     }
+
+    @include generate-breakpoints(padding-#{$direction}, none, 0);
 }
 
 .padding-none {

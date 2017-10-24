@@ -2,4 +2,6 @@
     .u-border-color-#{$name} {
         border-color: $value;
     }
+
+    @include generate-breakpoints(border-color, $name, $value);
 }

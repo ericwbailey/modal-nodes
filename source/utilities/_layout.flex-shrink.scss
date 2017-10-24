@@ -1,5 +1,7 @@
 @for $i from 1 through 12 {
-  .u-flex-shrink-#{$i} {
-    flex-shrink: $i;
-  }
+    .u-flex-shrink-#{$i} {
+        flex-shrink: $i;
+    }
+
+    @include generate-breakpoints(flex-shrink, $i);
 }

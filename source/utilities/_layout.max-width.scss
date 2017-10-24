@@ -2,12 +2,16 @@
     .u-max-width-ms-#{$i} {
         max-width: ms($i, rem);
     }
+
+    @include generate-breakpoints(max-width, ms-#{$i}, #{ms($i, rem)});
 }
 
 @each $percent in $percentages {
     .u-max-width-percent-#{$percent} {
         max-width: $percent * 1%;
     }
+
+    @include generate-breakpoints(max-width, percent-#{$percent}, $percent * 1%);
 }
 
 .u-max-width-auto {
