@@ -1,4 +1,4 @@
-$flex-directions:
+$flex-direction:
   column,
   column-reverse,
   row,
@@ -6,10 +6,10 @@ $flex-directions:
 ;
 
 
-@each $value in $flex-directions {
+@each $value in $flex-direction {
     .u-flex-direction-#{$value} {
         flex-direction: $value;
     }
 
-    @include generate-breakpoints(flex-directions, $value);
+    @include generate-breakpoints(flex-direction, $value);
 }
