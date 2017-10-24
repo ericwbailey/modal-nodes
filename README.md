@@ -18,7 +18,7 @@ If you are not familiar with the advantages/disadvantages of the functional CSS 
 Paste this into the header of your HTML document, *before* linking to other styles:
 
 ``` html
-<link as="style" rel="stylesheet" href="" />
+<link as="style" rel="stylesheet" href="https://gitcdn.link/repo/cantinac/modal-nodes/master/dist/main.css?token=AAmtT0XJpHKqP4NwN85a8ic1nK5ZX-b5ks5Z-Nk5wA==" />
 ```
 
 If needed, [GitCDN](https://github.com/schme16/gitcdn.xyz#how-to-use) also allows you to link to a specific commit, allowing you to pick a specific version at the expense of not receiving updates.
