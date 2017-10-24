@@ -1,4 +1,4 @@
-@mixin h-clearfix() {
+@mixin u-clearfix() {
     &::after {
         display: block;
         content: "";
@@ -7,13 +7,13 @@
 }
 
 
-.h-clearfix {
-    @include h-clearfix();
+.u-clearfix {
+    @include u-clearfix();
 
     // Breakpoints
     @each $breakpoint in $breakpoints-primary {
         @include mappy-bp($breakpoint) {
-            @include h-clearfix();
+            @include u-clearfix();
         }
     }
 }

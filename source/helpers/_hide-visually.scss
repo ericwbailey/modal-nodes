@@ -1,4 +1,4 @@
-@mixin h-hide-visually() {
+@mixin u-hide-visually() {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -11,13 +11,13 @@
 }
 
 
-.h-hide-visually {
-    @include h-hide-visually();
+.u-hide-visually {
+    @include u-hide-visually();
 
     // Breakpoints
     @each $breakpoint in $breakpoints-primary {
         @include mappy-bp($breakpoint) {
-            @include h-hide-visually();
+            @include u-hide-visually();
         }
     }
 }

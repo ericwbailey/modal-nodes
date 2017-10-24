@@ -1,4 +1,4 @@
-@mixin h-text-truncate() {
+@mixin u-text-truncate() {
     display: inline-block;
     text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
@@ -7,13 +7,13 @@
 }
 
 
-.h-text-truncate {
-    @include h-text-truncate();
+.u-text-truncate {
+    @include u-text-truncate();
 
     // Breakpoints
     @each $breakpoint in $breakpoints-primary {
         @include mappy-bp($breakpoint) {
-            @include h-text-truncate();
+            @include u-text-truncate();
         }
     }
 }

@@ -1,4 +1,4 @@
-@mixin h-text-break($word-or-link) {
+@mixin u-text-break($word-or-link) {
     @if ($word-or-link == "word") {
         hyphens: auto;
     }
@@ -16,12 +16,12 @@
 }
 
 
-.h-text-break {
+.u-text-break {
     &-word {
-        @include h-text-break(word);
+        @include u-text-break(word);
     }
 
     &-link {
-        @include h-text-break(link);
+        @include u-text-break(link);
     }
 }
