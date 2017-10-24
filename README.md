@@ -34,7 +34,7 @@ Classes can be triggered at specific breakpoints by appending one of the followi
 - `--palm-large`
 - `--lap-large`
 
-For example, `c-u-background-color-black--lap-large` will change the background color to black at lap-large's breakpoint. 
+For example, `u-background-color-black--lap-large` will change the background color to black at lap-large's breakpoint. 
 
 modal-nodes encourages [mobile-first](https://www.uxmatters.com/mt/archives/2012/03/mobile-first-what-does-it-mean.php) development by using `min-width` for its media queries.
 
@@ -47,7 +47,7 @@ As internal project work tends to be performed by different people in between cl
 
 This led to things like 5+ implementations for aligning an image, antipatterns such as too general/entangled selectors and specificity creep. This make future styling work problematic, as well as increasing overall stylesheet file size. 
 
-This isn't a condemnation of the work performed. It's absurd to expect a developer to have 100% perfect working knowledge of a project, especially if they're only there to make quick edits.
+This isn't a condemnation of the work performed. It's absurd to expect a developer to have 100% perfect working knowledge of a project they're only assigned to make quick edits on.
 
 
 ### What does `u-` mean?
@@ -57,19 +57,19 @@ This isn't a condemnation of the work performed. It's absurd to expect a develop
 
 ### What does `ms-` mean?
 
-`ms-` stands for "Modular Scale". [Modular scales](https://alistapart.com/article/more-meaningful-typography) are a way to create more meaningful, consistent measurements between site elements. All modular scale values are in `rems`.
+`ms-` stands for "Modular Scale". [Modular scales](https://alistapart.com/article/more-meaningful-typography) are a way to create more meaningful, consistent measurements between site elements. All modular scale values are in `rem`s.
 
 
 ### Why is it so verbose?
 
-Class names are human-readable so new developers can easily understand what classes do, how they affect the cascade, and anticipate which other classes are available—if `u-color-black` exists, it stands to reason that there's probably a `u-color-white` class.
+Class names are human-readable so new developers can easily understand what classes do, how they affect the cascade, and anticipate which other classes are available—if `u-color-black` exists, it stands to reason that there's a `u-color-white` class.
 
 Compare:
 
 - `class="h3 f5 pv3 lh-copy"` versus
-- `u-height-ms-3 u-font-size-5 padding-top-1 u-line-height-slight`
+- `u-height-ms-3 u-font-size-ms-5 padding-top-ms-1 u-line-height-slight`
 
-While it makes for longer line lengths, it is far easy for a new developer to understand when reading through the source. Whitespace is cheap and gzip is your friend!
+While it makes for longer line lengths, it is far easy for a new developer to understand when reading through the source. Whitespace is cheap and gzip is your friend! Take advantage of them!
 
 
 ### Where is ________?
@@ -120,17 +120,34 @@ This delineation helps keeps further stylesheet maintenance efforts more straigh
 
 As the specific measurements may change, modal-nodes uses an abstracted range of names to choose from. The patterns you'll encounter are:
 
-#### Priority 
-Primary, Secondary, Tertiary, Quaternary
-
-#### Proximity
-Tightest, Tighter, Tight, Slight, Loose, Looser, Loosest
-
-#### Width
-Thickest, Thicker, Thick, Thin, Thinner, Thinnest
-
-#### Height
-Shortest, Shorter, Short, Medium, Long, Longer, Longest
+- Priority 
+    1. Primary
+    1. Secondary
+    1. Tertiary
+    1. Quaternary
+- Proximity
+    - Tightest
+    - Tighter
+    - Tight
+    - Slight
+    - Loose
+    - Looser
+    - Loosest
+- Width
+    - Thickest
+    - Thicker
+    - Thick
+    - Thin
+    - Thinner
+    - Thinnest
+- Distance
+    - Shortest
+    - Shorter
+    - Short
+    - Medium
+    - Long
+    - Longer
+    - Longest
 
 
 ## TODO
