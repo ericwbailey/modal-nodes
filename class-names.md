@@ -1,5 +1,16 @@
 # Class Names
 
+## Table of Contents
+
+1. [Utilities](#utilities)
+    1. [Background](#background)
+    1. [Border](#border)
+    1. [Color](#color)
+    1. [Layout](#layout)
+    1. [Typography](#typography)
+1. [Helpers](#helpers)
+
+
 ## Utilities
 
 ### Background
