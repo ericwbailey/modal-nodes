@@ -13,11 +13,27 @@ modal-nodes is a small, simple functional CSS library for use with Cantina proje
 If you are not familiar with the advantages/disadvantages of the functional CSS methodology, [here is a good overview of the subject](https://marcelosomers.com/writing/rationalizing-functional-css/).
 
 
+## Use it
+
+Paste this into the header of your HTML document, *before* linking to other styles:
+
+``` html
+<link as="style" rel="stylesheet" href="" />
+```
+
+If needed, [GitCDN](https://github.com/schme16/gitcdn.xyz#how-to-use) also allows you to link to a specific commit, allowing you to pick a specific version at the expense of not receiving updates.
+
+
 ## Frequently Asked Questions
 
 ### Why should I use this?
 
 >We had 5+ implementations of X
+
+
+### What does `u-` mean?
+
+`u-` stands for "Utility", a common namespace for all this repos' classes. This helps keep the distinction between what is and isn't modal node classes clear.
 
 
 ### Why is it so verbose?
@@ -32,17 +48,13 @@ Compare:
 While it makes for longer line lengths, it is far easy for a new developer to understand when reading through the source. Whitespace is cheap and gzip is your friend, don't be afraid to use them! 
 
 
-### What does `u-` mean?
-
-`u-` stands for "Utility", a common namespace for all this repos' classes. This helps keep the distinction between what is and isn't modal node classes clear.
-
-
-### Where is ______?
+### Where is ________?
 
 Not every property in CSS is represented, and this is by design. modal-nodes is built to cover most of the basic styling needs for a site. The last mile of work should still be done in a safely namespaced way.
 
 For example:
 
+#### HTML
 ``` html
 <div class="c-card u-background-color-white u-padding-ms-2 u-border-bottom-thinner">
   <h2 class="c-card__image u-font-size-ms-2 u-color-red-light u-line-height-tight">
@@ -58,16 +70,22 @@ For example:
 </div>
 ```
 
+#### Sass
 ``` css
 .c-card {
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.75);
-  
+  transition: box-shadow $easing-fast;
+
+	&:hover {
+	  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.9);
+	  transition: box-shadow $easing-fast;
+	}
+
     &__image {
       background-color: #1a6195;
       background-blend-mode: multiply;
     }
 }
-…
 ```
 
 In this card example, the tricky custom CSS that needs an author's opinion is added in the namespaced `c-` component classes. 
@@ -75,12 +93,15 @@ In this card example, the tricky custom CSS that needs an author's opinion is ad
 This delineation helps keeps further stylesheet maintenance efforts more straightforward. Be sure to also leverage Sass logic when the opportunity presents itself.
 
 
+### Responsive
+
+
 ## TODO
 
 - [ ] Responsive modifiers
 - [ ] Living styleguide
 - [ ] Full Cantina palette
-
+- [ ] Further abstraction via passing properties as vars
 
 ### What's up with the name?
 
