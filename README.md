@@ -10,7 +10,7 @@ modal-nodes is simple, small (42k gzipped!) functional CSS library for use with 
 - Less responsibility for the developer to know CSS' peculiarities
 - Faster setup for future Cantina projects
 
-If you are not familiar with the advantages/disadvantages of the functional CSS methodology, [here is a good overview of the subject](https://marcelosomers.com/writing/rationalizing-functional-css/).
+If you are not familiar with the advantages/disadvantages of the functional CSS methodology, [here is a good overview of the subject](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/).
 
 
 ## Use it
