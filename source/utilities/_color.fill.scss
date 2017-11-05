@@ -1,0 +1,7 @@
+@each $name, $value in $colors {
+    .u-fill-#{$name} {
+        fill: $value;
+    }
+
+    @include generate-breakpoints(fill, $name, $value);
+}
