@@ -7,6 +7,16 @@
 }
 
 @each $percent in $percentages {
+    @each $unit in $viewport-units {
+        .u-width-#{$unit}-#{$percent} {
+            width: $percent + $unit;
+        }
+
+        @include generate-breakpoints(width, vh-#{$percent}, $percent + $unit);
+    }
+}
+
+@each $percent in $percentages {
     .u-width-percent-#{$percent} {
         width: $percent * 1%;
     }

@@ -6,6 +6,16 @@
     @include generate-breakpoints(padding, padding-#{$i}, #{ms($i, rem)});
 }
 
+@each $percent in $percentages {
+    @each $unit in $viewport-units {
+        .u-margin-#{$unit}-#{$percent} {
+            margin: $percent + $unit;
+        }
+
+        @include generate-breakpoints(margin, #{$unit}-#{$percent}, $percent + $unit);
+    }
+}
+
 @for $i from 1 through $global-iterations {
     @each $direction in $directions {
         .padding-#{$direction}-ms-#{$i} {
@@ -13,6 +23,18 @@
         }
 
         @include generate-breakpoints(padding-#{$direction}, ms-#{$i}, ms($i, rem));
+    }
+}
+
+@each $percent in $percentages {
+    @each $direction in $directions {
+        @each $unit in $viewport-units {
+            .padding-#{$direction}-#{$unit}-#{$percent} {
+                padding-#{$direction}: $percent + $unit;
+            }
+
+            @include generate-breakpoints(padding-#{$direction}, $unit + -#{$percent}, $percent + $unit);
+        }
     }
 }
 

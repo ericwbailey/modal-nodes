@@ -7,6 +7,16 @@
 }
 
 @each $percent in $percentages {
+    @each $unit in $viewport-units {
+        .u-min-height-#{$unit}-#{$percent} {
+            min-height: $percent + $unit;
+        }
+
+        @include generate-breakpoints(min-height, vh-#{$percent}, $percent + $unit);
+    }
+}
+
+@each $percent in $percentages {
     .u-min-height-percent-#{$percent} {
         min-height: $percent * 1%;
     }

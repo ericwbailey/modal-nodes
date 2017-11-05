@@ -7,6 +7,16 @@
 }
 
 @each $percent in $percentages {
+    @each $unit in $viewport-units {
+        .u-max-width-#{$unit}-#{$percent} {
+            max-width: $percent + $unit;
+        }
+
+        @include generate-breakpoints(max-width, vh-#{$percent}, $percent + $unit);
+    }
+}
+
+@each $percent in $percentages {
     .u-max-width-percent-#{$percent} {
         max-width: $percent * 1%;
     }
