@@ -1,0 +1,12 @@
+img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle; // Removes the whitespace that appears under `img` elements
+
+    // Fixed-size, non-fluid images if `height` and/or `width` attributes are
+    // declared
+    &[height],
+    &[width] {
+        max-width: none;
+    }
+}

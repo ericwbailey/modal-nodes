@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+
+    caption {
+        text-align: left;
+    }
+
+    col,
+    th,
+    td {
+        text-align: left;
+    }
+
+    &[colspan] {
+        text-align: center;
+    }
+
+    &[colspan="1"] {
+        text-align: right;
+    }
+
+    &[rowspan] {
+        vertical-align: middle;
+    }
+
+    &[rowspan="1"] {
+        vertical-align: top;
+    }
+}

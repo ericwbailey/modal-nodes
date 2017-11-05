@@ -1,0 +1,23 @@
+// For working with SVG icons
+// Don't use the `<i>` tag, Bootstrap lies
+.icon-sprite {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0;
+
+    pointer-events: none;
+    speak: none;
+}

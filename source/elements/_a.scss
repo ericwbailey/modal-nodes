@@ -1,0 +1,7 @@
+a {
+    // Display links when the `<a>` element has no text value but the href
+    // attribute has a link
+    &[href^="http"]:empty::before {
+      content: attr(href);
+    }
+}

@@ -36,7 +36,9 @@ $global-type-ratio: 1.618;
   // http://lukyvj.github.io/family.scss/
   "../node_modules/family.scss/source/src/family",
   // https://github.com/zellwk/mappy-breakpoints
-  "../node_modules/mappy-breakpoints/mappy-breakpoints"
+  "../node_modules/mappy-breakpoints/mappy-breakpoints",
+  // https://necolas.github.io/normalize.css/
+  "../node_modules/normalize.css/normalize.css"
 ;
 
 
@@ -92,7 +94,7 @@ $global-type-ratio: 1.618;
 ;
 
 
-// Utilities are immuatable, low-specificity, single-purpose classes.
+// Helpers can be used to manipulate behavior.
 @import
   "helpers/clearfix",
   "helpers/cursors",
@@ -102,4 +104,37 @@ $global-type-ratio: 1.618;
   "helpers/reset-all-styles",
   "helpers/text-break",
   "helpers/text-truncate"
+;
+
+
+// Elements provide common styling for HTML elements
+@import
+    "elements/a",
+    "elements/abbr",
+    "elements/all",
+    "elements/audio",
+    "elements/b-strong",
+    "elements/button",
+    "elements/canvas",
+    "elements/code",
+    "elements/del",
+    "elements/figure",
+    "elements/hr",
+    "elements/i-em",
+    "elements/icons",
+    "elements/iframe",
+    "elements/img",
+    "elements/input",
+    "elements/ins",
+    "elements/kbd",
+    "elements/object",
+    "elements/picture",
+    "elements/pre",
+    "elements/quotes",
+    "elements/samp",
+    "elements/select",
+    "elements/table",
+    "elements/textarea",
+    "elements/var",
+    "elements/video"
 ;
