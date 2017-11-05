@@ -1,6 +1,6 @@
 @for $i from 1 through $global-iterations {
     @each $direction in $directions {
-        .#{$direction}-#{$i} {
+        .u-#{$direction}-ms-#{$i} {
             #{$direction}: ms($i, rem);
         }
 
@@ -11,7 +11,7 @@
 @each $percent in $percentages {
     @each $direction in $directions {
         @each $unit in $viewport-units {
-            .#{$direction}-#{$unit}-#{$percent} {
+            .u-#{$direction}-#{$unit}-#{$percent} {
                 #{$direction}: $percent + $unit;
             }
 

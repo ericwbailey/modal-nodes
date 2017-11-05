@@ -18,7 +18,7 @@
 
 @for $i from 1 through $global-iterations {
     @each $direction in $directions {
-        .padding-#{$direction}-ms-#{$i} {
+        .u-padding-#{$direction}-ms-#{$i} {
             padding: ms($i, rem);
         }
 
@@ -29,7 +29,7 @@
 @each $percent in $percentages {
     @each $direction in $directions {
         @each $unit in $viewport-units {
-            .padding-#{$direction}-#{$unit}-#{$percent} {
+            .u-padding-#{$direction}-#{$unit}-#{$percent} {
                 padding-#{$direction}: $percent + $unit;
             }
 
@@ -39,13 +39,13 @@
 }
 
 @each $direction in $directions {
-    .padding-#{$direction}-none {
+    .u-padding-#{$direction}-none {
         padding-#{$direction}: 0;
     }
 
     @include generate-breakpoints(padding-#{$direction}, none, 0);
 }
 
-.padding-none {
+.u-padding-none {
     padding: 0;
 }

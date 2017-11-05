@@ -18,7 +18,7 @@
 
 @for $i from 1 through $global-iterations {
     @each $direction in $directions {
-        .margin-#{$direction}-ms-#{$i} {
+        .u-margin-#{$direction}-ms-#{$i} {
             margin-#{$direction}: ms($i, rem);
         }
 
@@ -29,7 +29,7 @@
 @each $percent in $percentages {
     @each $direction in $directions {
         @each $unit in $viewport-units {
-            .margin-#{$direction}-#{$unit}-#{$percent} {
+            .u-margin-#{$direction}-#{$unit}-#{$percent} {
                 margin-#{$direction}: $percent + $unit;
             }
 
@@ -39,13 +39,13 @@
 }
 
 @each $direction in $directions {
-    .margin-#{$direction}-none {
+    .u-margin-#{$direction}-none {
         margin-#{$direction}: 0;
     }
 
     @include generate-breakpoints(margin-#{$direction}, none, 0);
 }
 
-.margin-none {
+.u-margin-none {
     margin: 0;
 }
