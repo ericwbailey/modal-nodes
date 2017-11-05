@@ -2,7 +2,7 @@
   "name": "modal-nodes",
   "description": "A modular, low-specificity CSS framework for cantina.co",
   "homepage": "https://github.com/cantinac/modal-nodes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": "Eric Bailey <eric@cantina.co> (https://cantina.co/)",
   "repository": {
