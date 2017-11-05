@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    min-height: 100%; // Ensure the page always fills at least the entire height of the viewport
+    overflow-x: hidden;
+    padding: 0;
+
+    background-color: #ffffff;
+
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern";
+    -ms-font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-size-adjust: 100%; // Overrides smartphone text resizing algorithms: https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+
+    &:lang(en-US) {
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    // Only apply to devices that support font smoothing:
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 2dppx) {
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-smoothing: subpixel-antialiased;
+    }
+}

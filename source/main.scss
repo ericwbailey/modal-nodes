@@ -111,6 +111,8 @@ $global-type-ratio: 1.618;
 
 // Elements provide common styling for HTML elements
 @import
+    "elements/html",
+    "elements/body",
     "elements/a",
     "elements/abbr",
     "elements/all",
