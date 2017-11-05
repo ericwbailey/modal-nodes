@@ -11,9 +11,9 @@ body {
     -ms-font-feature-settings: "kern";
     -webkit-font-feature-settings: "kern";
     font-feature-settings: "kern";
-    font-size: 20px;
+    font-size: $global-font-size;
     font-weight: normal;
-    line-height: 1.5;
+    line-height: $global-line-height;
     text-size-adjust: 100%; // Overrides smartphone text resizing algorithms: https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
 
     &:lang(en-US) {
