@@ -17,7 +17,9 @@ gulp.task('styles', function() {
       errLogToConsole: true
     }))
     .pipe(autoprefix())
-    .pipe(cssnano())
+    .pipe(cssnano({
+      discardComments: {removeAll: true}
+    }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream({ match: '**/*.css' }));
