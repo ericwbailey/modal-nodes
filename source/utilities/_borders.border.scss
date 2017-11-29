@@ -17,3 +17,13 @@ $border-widths: (
         @include generate-breakpoints(border-#{$direction}, $width, $value, "solid currentColor");
     }
 }
+
+@each $direction in $directions {
+    .u-border-#{$direction}-none {
+        border-#{$direction}: 0;
+    }
+}
+
+.u-border-none {
+    border: none;
+}
