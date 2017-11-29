@@ -1,6 +1,6 @@
 # modal-nodes
 
-modal-nodes is simple, small (52k gzipped!) functional CSS library for use with Cantina projects. It provides:
+modal-nodes is simple, small (111k gzipped!) functional CSS library for use with Cantina projects. It provides:
 
 - Small, single purpose classes to help describe site elements and components
 - Better control over the cascade and less unintended styling collisions
