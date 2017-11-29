@@ -18,7 +18,7 @@ If you are not familiar with the advantages/disadvantages of the functional CSS 
 Paste this into the header of your HTML document, *before* linking to other styles:
 
 ``` html
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/cantinac/modal-nodes/master/dist/main.css" />
+<link as="style" rel="stylesheet" type="text/css" href="https://rawgit.com/cantinac/modal-nodes/master/dist/modal-nodes.css" />
 ```
 
 ### List of classes
@@ -158,10 +158,3 @@ As the specific measurements may change, modal-nodes uses an abstracted range of
 ## What's up with the name?
 
 ![](https://i.imgur.com/2bTV6oc.jpg)
-
-
-
-
-
-
-

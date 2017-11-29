@@ -10,7 +10,7 @@ var gulp        = require('gulp'),
 
 // Tasks
 gulp.task('styles', function() {
-  return gulp.src("./source/main.scss")
+  return gulp.src("./source/modal-nodes.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed',
