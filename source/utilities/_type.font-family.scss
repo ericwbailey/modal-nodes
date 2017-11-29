@@ -8,6 +8,6 @@ $font-family: (
 
 @each $typeface, $stack in $font-family {
     .u-font-family-#{$typeface} {
-        font-weight: $stack;
+        font-family: unquote($stack);
     }
 }
