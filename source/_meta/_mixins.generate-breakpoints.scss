@@ -1,5 +1,6 @@
 // SEE: `_meta/lists.breakpoints.scss`
-@mixin generate-breakpoints($property,
+@mixin generate-breakpoints(
+  $property,
   $value,
   $map: null,
   $string: null
