@@ -2414,6 +2414,9 @@
 - `.u-vertical-align-text-bottom`
 - `.u-vertical-align-text-top`
 - `.u-vertical-align-top`
+
+### Helpers
+
 - `.u-clearfix`
 - `.u-cursor-default`
 - `.u-cursor-grab`

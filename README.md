@@ -18,10 +18,8 @@ If you are not familiar with the advantages/disadvantages of the functional CSS 
 Paste this into the header of your HTML document, *before* linking to other styles:
 
 ``` html
-<link as="style" rel="stylesheet" href="https://gitcdn.xyz/repo/cantinac/modal-nodes/master/dist/main.css" />
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/cantinac/modal-nodes/master/dist/main.css" />
 ```
-
-If needed, [GitCDN](https://github.com/schme16/gitcdn.xyz#how-to-use) also allows you to link to a specific commit, allowing you to pick a specific version at the expense of not receiving updates.
 
 ### List of classes
 Until a [living styleguide](#todo) has been built, a list of the available class names is [located here](https://github.com/cantinac/modal-nodes/blob/master/class-names.md).
