@@ -20,7 +20,7 @@ $border-widths: (
 
 @each $direction in $directions {
     .u-border-#{$direction}-none {
-        border-#{$direction}: 0;
+        @include generate-breakpoints(border-#{$direction}, none, 0);
     }
 }
 
