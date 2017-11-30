@@ -19,7 +19,7 @@
 @for $i from 1 through $global-iterations {
     @each $direction in $directions {
         .u-padding-#{$direction}-ms-#{$i} {
-            padding: ms($i, rem);
+            padding-#{$direction}: ms($i, rem);
         }
 
         @include generate-breakpoints(padding-#{$direction}, ms-#{$i}, ms($i, rem));
