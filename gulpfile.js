@@ -9,7 +9,21 @@ var gulp        = require('gulp'),
 
 
 // Tasks
-gulp.task('styles', function() {
+gulp.task('styles-dev', function() {
+  return gulp.src("./source/modal-nodes.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'expanded',
+      errLogToConsole: true
+    }))
+    .pipe(autoprefix())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("./dist"))
+    .pipe(browsersync.stream({ match: '**/*.css' }));
+});
+
+
+gulp.task('styles-dist', function() {
   return gulp.src("./source/modal-nodes.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -20,7 +34,6 @@ gulp.task('styles', function() {
     .pipe(cssnano({
       discardComments: {removeAll: true}
     }))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream({ match: '**/*.css' }));
 });
@@ -44,14 +57,14 @@ gulp.task('browsersync-reload', function() {
 
 
 gulp.task('default', ['build'], function() {
-  gulp.watch("./**/*.scss", ['styles'])
+  gulp.watch("./**/*.scss", ['styles-dev'])
   gulp.watch("./**/*.html", ['browsersync-reload']);
 });
 
 
 gulp.task('build', function(cb) {
   runSequence(
-    'styles',
+    'styles-dev',
     'browsersync'
   );
   return cb();

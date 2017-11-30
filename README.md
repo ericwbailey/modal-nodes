@@ -147,9 +147,13 @@ As the specific measurements may change, modal-nodes uses an abstracted range of
     - Longer
     - Longest
 - Value
+    - Lightest
+    - Lighter
     - Light
     - Mid
     - Dark
+    - Darker
+    - Darkest
 
 ## TODO
 
