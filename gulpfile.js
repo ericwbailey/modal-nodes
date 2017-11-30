@@ -18,7 +18,7 @@ gulp.task('styles-dev', function() {
     }))
     .pipe(autoprefix())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("./dist"))
+    .pipe(gulp.dest("./dev"))
     .pipe(browsersync.stream({ match: '**/*.css' }));
 });
 
@@ -35,7 +35,6 @@ gulp.task('styles-dist', function() {
       discardComments: {removeAll: true}
     }))
     .pipe(gulp.dest("./dist"))
-    .pipe(browsersync.stream({ match: '**/*.css' }));
 });
 
 
