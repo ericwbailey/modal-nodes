@@ -10,7 +10,7 @@ $letter-spacing: (
 
 
 @each $distance, $value in $letter-spacing {
-    .u-letter-space-#{$distance} {
-        font-weight: $value;
+    .u-letter-spacing-#{$distance} {
+        letter-spacing: $value;
     }
 }
