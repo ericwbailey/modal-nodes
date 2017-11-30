@@ -8,11 +8,11 @@
 
 @each $percent in $percentages {
     @each $unit in $viewport-units {
-        .u-max-width-#{$unit}-#{$percent} {
-            max-width: $percent + $unit;
+        .u-max-height-#{$unit}-#{$percent} {
+            max-height: $percent + $unit;
         }
 
-        @include generate-breakpoints(max-width, vh-#{$percent}, $percent + $unit);
+        @include generate-breakpoints(max-height, vh-#{$percent}, $percent + $unit);
     }
 }
 
