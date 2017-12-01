@@ -12,7 +12,7 @@
             min-height: $percent + $unit;
         }
 
-        @include generate-breakpoints(min-height, vh-#{$percent}, $percent + $unit);
+        @include generate-breakpoints(min-height, #{$unit}-#{$percent}, $percent + $unit);
     }
 }
 

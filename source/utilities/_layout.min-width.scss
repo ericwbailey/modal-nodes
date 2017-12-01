@@ -12,7 +12,7 @@
             min-width: $percent + $unit;
         }
 
-        @include generate-breakpoints(min-width, vh-#{$percent}, $percent + $unit);
+        @include generate-breakpoints(min-width, #{$unit}-#{$percent}, $percent + $unit);
     }
 }
 

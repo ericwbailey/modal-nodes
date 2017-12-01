@@ -12,7 +12,7 @@
             max-width: $percent + $unit;
         }
 
-        @include generate-breakpoints(max-width, vh-#{$percent}, $percent + $unit);
+        @include generate-breakpoints(max-width, #{$unit}-#{$percent}, $percent + $unit);
     }
 }
 

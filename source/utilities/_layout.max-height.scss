@@ -12,7 +12,7 @@
             max-height: $percent + $unit;
         }
 
-        @include generate-breakpoints(max-height, vh-#{$percent}, $percent + $unit);
+        @include generate-breakpoints(max-height, #{$unit}-#{$percent}, $percent + $unit);
     }
 }
 
